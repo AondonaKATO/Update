@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Submission Redirect</title>
+<meta charset="UTF-8">
+<meta name="description" content="Noble Dreamers">
+<meta name="keywords" content="Aondona, Kato, Noble, Dreamz">
+<meta name="author" content="Aondona Kato">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function redirectToPage() {
+            // Replace 'noble.html' with the URL of the page you want to redirect to.
+            var destinationUrl = 'noble.html';
+            window.location.href = destinationUrl;
+        }
+    </script>
+</head>
+<body>
+    <h1><i class="fa fa-sign-in" aria-hidden="true">Sign Up</i></h1>
+
+    <form action="javascript:redirectToPage()" method="post">
+<pre>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" style="border-color:darkgreen;" required>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Submit">
+    </form></pre>
+<footer>
+&copy 2024 Aondona Kato
+</footer>
+</body>
+</html>

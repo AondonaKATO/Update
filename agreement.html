@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Privacy Policy Agreement</title>
+
+<meta charset="UTF-8">
+<meta name="description" content="Noble Dreamers">
+<meta name="keywords" content="Aondona, Kato, Noble, Dreamz">
+<meta name="author" content="Aondona Kato">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body style="text-align:center;">
+    <h1>Privacy Policy Agreement</h1>
+    <p>Please read and agree to our privacy policy before continuing.</p>
+<iframe src="policy.html" height="200px" width="300px" title="Privacy Policy" style="border-color:blue; padding:20px;"> </iframe>
+<br>
+    <form id="privacyPolicyForm">
+        <label for="agree">I agree with the privacy policy:</label>
+        <input type="checkbox" id="agree" required>
+        <button type="button" onclick="handleAgreement()">Continue</button>
+        <button type="button" onclick="handleDisagreement()">Disagree and Close</button>
+    </form>
+
+    <script>
+        function handleAgreement() {
+            if (document.getElementById("agree").checked) {
+                // User agrees, continue to the website 
+                window.location.href = "signup.html";
+            } else {
+                alert("Please agree to the privacy policy to continue.");
+            }
+        }
+
+        function handleDisagreement() {
+            // User disagrees, close the website
+            window.close();
+        }
+    </script>
+<div>
+<footer>
+&copy 2024 Aondona Kato
+</footer><br>
+</div>
+</body>
+</html>

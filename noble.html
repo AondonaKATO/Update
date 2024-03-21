@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personality Test</title>
+    <meta charset="UTF-8">
+<meta name="description" content="Noble Dreamers">
+<meta name="keywords" content="Aondona, Kato, Noble, Dreamz">
+<meta name="author" content="Aondona Kato">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+      /* css styling for footer */
+      .footer {
+  background-color: #ddd;
+  color: rgb(31, 2, 2);
+  padding: 15px 15px;
+  text-align: center;
+  margin-top: 20px;
+  width: 97%;
+  position: absolute;
+    bottom: 0;
+}
+
+button{
+    cursor: pointer;
+}
+
+</style>
+
+<!--Script codes-->
+<script>
+    function ptest(){
+document.getElementById("e")
+    }
+</script>
+</head>
+<body>
+    <div>
+        <header>
+    <h1 style="text-align: center; color: aquamarine;">Personality Test</h1>
+    </header>
+    </div>
+<div>
+    <form method="post">
+        <label for="choice1" required>You prefer to:</label><br>
+        <input type="radio" id="e" name="choice1">have people, activities or things around you.<br>
+        <input type="radio" id="i" name="choice1">be alone with your own ideas, emotions and impressions.<br>
+
+        <div>
+            <label for="choice2" required>You notice</label></br>
+            <input type="radio" id="s" name="choice2">what is real, you look at the practical things around you.<br>
+            <input type="radio" id="n" name="choice2">what may be, are good at imaginig thinsgs.
+        </div>
+
+        <div>
+            <label for="choice3" required>You decide things</label></br>
+            <input type="radio" id="t" name="choice3">in a logical and well organised way.<br>
+            <input type="radio" id="f" name="choice3">in your own passionate way.<br>
+        </div>
+
+        <div>
+            <label for="choice4" required>You live</label></br>
+            <input type="radio" id="j" name="choice4">a planned and organized life.<br>
+            <input type="radio" id="p" name="choice4">a flexible life and decide what you do as you go along.<br>
+        </div>
+        <div>
+            <button onclick="ptest()" value="Submit">Submit</button>
+        </div>
+    </form>
+    </div>
+    <br>
+    <div>
+        <button onclick="document.location='ANoble Test v4.html'">Return to Home</button>
+    </div>
+   <div>   
+<footer class="footer">
+&copy 2024 Aondona Kato
+</footer>
+</div>
+</body>
+</html>
